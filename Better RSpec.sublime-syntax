@@ -47,7 +47,7 @@ contexts:
         - include: expressions
 
   expectation:
-    - match: '\.(to|not_to)\s*((contain|include|be)_?[^\s\(]*|eql?|raise_error|have_http_status)'
+    - match: '\.(to|not_to)\s*((contain|include|be)_?[^\s\(]*|eql?|have_[^\s\(]*|raise_error|render_template|redirect_to|match_array|send_email)'
       captures:
         1: keyword.other.rspec.expectation
         2: keyword.other.rspec.expectation
